@@ -1,2 +1,2 @@
 FROM httpd
-COPY docker.html /var/www/html/docker.html
+COPY index.html /var/www/html/index.html

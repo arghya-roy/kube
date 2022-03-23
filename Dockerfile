@@ -1,5 +1,3 @@
-FROM httpd
-COPY ./index.html /var/www/html/
-
-CMD [“/usr/sbin/httpd”,” -D”,” FOREGROUND”]
-EXPOSE 80
+FROM nginx
+RUN rm -rf /usr/share/nginx/html/
+COPY index.html /usr/share/nginx/html/
